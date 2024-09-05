@@ -7,6 +7,13 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
+        <TabControl>
+            <TabItem Header="Lecturer Claims" Name="LecCla">
+                
+            </TabItem>
+            <TabItem Header="PMS View" Name="pms">
 
+            </TabItem>
+        </TabControl>
     </Grid>
 </Window>

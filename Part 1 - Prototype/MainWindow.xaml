@@ -8,10 +8,18 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="Lecturer Claims" Name="LecCla">
-                
+            <TabItem Header="Lecturer View" Name="LecCla">
+                <StackPanel Orientation="Vertical">
+                    <StackPanel Orientation="Horizontal" Margin="15">
+                        <TextBlock Width="90" Text="Lecturer Name:"  Margin="10 0 0 0"/>
+                        <TextBox Name="LName" Width="180" Margin="10 0 0 0" />
+                        <TextBlock Width="100" Text="Lecturer Surname:"  Margin="10 0 0 0"/>
+                        <TextBox Name="LSurname" Width="180" Margin="10 0 0 0" />
+                    </StackPanel>
+                 
+                </StackPanel> 
             </TabItem>
-            <TabItem Header="PMS View" Name="pms">
+            <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">
 
             </TabItem>
         </TabControl>

@@ -26,6 +26,12 @@
                         <Label>End Date:</Label>
                         <DatePicker></DatePicker>
                     </StackPanel>
+                    <StackPanel Orientation="Horizontal" Margin="15">
+                        <TextBlock Width="120" Text="Total Hours Worked:"  Margin="10 0 0 0"/>
+                        <TextBox Name="HoursWorked" Width="110" Margin="10 0 0 0" />
+                        <TextBlock Width="80" Text="Hourly Rate:"  Margin="10 0 0 0"/>
+                        <TextBox Name="HRate" Width="110" Margin="10 0 0 0" />
+                    </StackPanel>
 
                 </StackPanel> 
             </TabItem>

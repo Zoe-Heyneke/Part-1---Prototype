@@ -32,7 +32,10 @@
                         <TextBlock Width="80" Text="Hourly Rate:"  Margin="10 0 0 0"/>
                         <TextBox Name="HRate" Width="110" Margin="10 0 0 0" />
                     </StackPanel>
-
+                    <StackPanel Orientation="Horizontal" Margin="15">
+                        <TextBlock Width="180" Text="Choose a Document to Upload:"  Margin="10 0 0 0"/>
+                        <Button x:Name="UploadButton" Content="Upload Document"/>
+                    </StackPanel>
                 </StackPanel> 
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">

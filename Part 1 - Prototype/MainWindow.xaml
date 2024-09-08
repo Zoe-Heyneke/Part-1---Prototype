@@ -36,6 +36,7 @@
                         <TextBlock Width="180" Text="Choose a Document to Upload:"  Margin="10 0 0 0"/>
                         <Button x:Name="UploadButton" Content="Upload Document"/>
                     </StackPanel>
+                    <Button Width="100" Height="25" Content="Submit Claim" Click="BtnSub_Click"/>
                 </StackPanel> 
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">

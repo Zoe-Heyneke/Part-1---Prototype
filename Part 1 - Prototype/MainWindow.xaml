@@ -8,9 +8,32 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="Lecturer View" Name="LecCla">
+            <TabItem Header="HomePage" Name="Home">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Width="350" Text="Welcome to the Contract Monthly Claim System (CMCS)"  Margin="10 0 0 0"/>
+                    <StackPanel Margin="15" HorizontalAlignment="Center">
+                        <TextBlock Width="90" Text="Username:"  Margin="10 0 0 0"/>
+                        <TextBox Name="SUsername" Width="180" Margin="10 0 0 0" />
+                        <TextBlock Width="100" Text="Password:"  Margin="10 0 0 0"/>
+                        <TextBox Name="SPassword" Width="180" Margin="10 0 0 0" />
+                        <TextBlock Text="Your Role" Width="80"/>
+                        <ComboBox Width="200" SelectedIndex="0" Name="CBCarMan" >
+                            <ComboBoxItem>Select Role</ComboBoxItem>
+                            <ComboBoxItem>Lecturer</ComboBoxItem>
+                            <ComboBoxItem>PC and AM</ComboBoxItem>
+                            <ComboBoxItem>HR</ComboBoxItem>
+                        </ComboBox>
+                        <Button Content="Confirm" Margin="10 0 0 0" Width="50" Name="RoleSelect" Click="RConfirm_Click"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Button Width="100" Height="25" Content="SignUp" Click="SignUp_Click"/>
+                        <Button Width="100" Height="25" Content="LogIn" Click="LogIn_Click"/>
+                    </StackPanel>
+                </StackPanel>
+            </TabItem>
+            <TabItem Header="Lecturer View" Name="LecCla">
+                <StackPanel Orientation="Vertical">
+                    <TextBlock Width="150" Text="Claim Submission"  Margin="10 0 0 0"/>
                     <TextBlock Width="180" Text="--Lecturer--"  Margin="0 0 600 0"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="90" Text="Lecturer Name:"  Margin="10 0 0 0"/>
@@ -50,7 +73,9 @@
                 </StackPanel> 
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">
-
+                <StackPanel Orientation="Vertical">
+                    
+                </StackPanel>
             </TabItem>
         </TabControl>
     </Grid>

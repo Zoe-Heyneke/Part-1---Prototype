@@ -16,7 +16,17 @@
                         <TextBlock Width="100" Text="Lecturer Surname:"  Margin="10 0 0 0"/>
                         <TextBox Name="LSurname" Width="180" Margin="10 0 0 0" />
                     </StackPanel>
-                 
+                    <StackPanel Orientation="Horizontal" Margin="15">
+                        <TextBlock Width="80" Text="Course Code:"  Margin="10 0 0 0"/>
+                        <TextBox Name="Code" Width="110" Margin="10 0 0 0" />
+                        <TextBlock Width="90" Text="Group Number:"  Margin="10 0 0 0"/>
+                        <TextBox Name="Group" Width="110" Margin="10 0 0 0" />
+                        <Label>Start Date:</Label>
+                        <DatePicker></DatePicker>
+                        <Label>End Date:</Label>
+                        <DatePicker></DatePicker>
+                    </StackPanel>
+
                 </StackPanel> 
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">

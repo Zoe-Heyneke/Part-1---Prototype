@@ -74,7 +74,28 @@
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">
                 <StackPanel Orientation="Vertical">
-                    
+                    <TextBlock Width="350" Text="Verification of Claims"  Margin="10 0 0 0"/>
+                    <Button Width="100" Height="25" Content="View Claims" Click="VClaim_Click"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Name="LblLec" Content="Lecture: " Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Name="LblCo" Content="Course: " Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Name="LblH" Content="Hours: " Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Label Name="LblDoc" Content="Documents: " Width="200"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Vertical">
+                        <Label Content="Notes:"/>
+                        <TextBlock Name="TBLNotes"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal">
+                        <Button Width="100" Height="25" Content="Approve" Click="SignUp_Click"/>
+                        <Button Width="100" Height="25" Content="Reject" Click="LogIn_Click"/>
+                    </StackPanel>
                 </StackPanel>
             </TabItem>
         </TabControl>

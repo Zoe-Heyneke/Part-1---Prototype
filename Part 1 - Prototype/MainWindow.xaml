@@ -10,8 +10,8 @@
         <TabControl>
             <TabItem Header="HomePage" Name="Home">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Width="350" Text="Welcome to the Contract Monthly Claim System (CMCS)"  Margin="10 0 0 0"/>
-                    <StackPanel Margin="15" HorizontalAlignment="Center">
+                    <TextBlock Width="350" Text="Welcome to the Contract Monthly Claim System (CMCS)"  Margin="10 0 0 0" HorizontalAlignment="Center"/>
+                    <StackPanel Margin="15,30,15,15" HorizontalAlignment="Center">
                         <TextBlock Width="90" Text="Username:"  Margin="10 0 0 0"/>
                         <TextBox Name="SUsername" Width="180" Margin="10 0 0 0" />
                         <TextBlock Width="100" Text="Password:"  Margin="10 0 0 0"/>
@@ -25,7 +25,7 @@
                         </ComboBox>
                         <Button Content="Confirm" Margin="10 0 0 0" Width="50" Name="RoleSelect" Click="RConfirm_Click"/>
                     </StackPanel>
-                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
                         <Button Width="100" Height="25" Content="SignUp" Click="SignUp_Click"/>
                         <Button Width="100" Height="25" Content="LogIn" Click="LogIn_Click"/>
                     </StackPanel>
@@ -74,8 +74,8 @@
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Width="350" Text="Verification of Claims"  Margin="10 0 0 0"/>
-                    <Button Width="100" Height="25" Content="View Claims" Click="VClaim_Click"/>
+                    <TextBlock Width="120" Text="Verification of Claims"  Margin="10 0 0 0" HorizontalAlignment="Center"/>
+                    <Button Width="100" Height="25" Content="View Claims" Click="VClaim_Click" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal">
                         <Label Name="LblLec" Content="Lecture: " Width="200"/>
                     </StackPanel>

@@ -10,38 +10,38 @@
         <TabControl>
             <TabItem Header="HomePage" Name="Home">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Width="350" Text="Welcome to the Contract Monthly Claim System (CMCS)"  Margin="10 0 0 0" HorizontalAlignment="Center"/>
+                    <TextBlock Width="650" Text="Welcome to the Contract Monthly Claim System (CMCS)"  Margin="10 0 0 0" HorizontalAlignment="Center" FontSize="24" FontWeight="Bold" TextDecorations="Underline"/>
                     <StackPanel Margin="15,30,15,15" HorizontalAlignment="Center">
-                        <TextBlock Width="90" Text="Username:"  Margin="10 0 0 0"/>
-                        <TextBox Name="SUsername" Width="180" Margin="10 0 0 0" />
-                        <TextBlock Width="100" Text="Password:"  Margin="10 0 0 0"/>
-                        <TextBox Name="SPassword" Width="180" Margin="10 0 0 0" />
-                        <TextBlock Text="Your Role" Width="80"/>
-                        <ComboBox Width="200" SelectedIndex="0" Name="CBCarMan" >
+                        <TextBlock Width="90" Text="Username:"  Margin="10 0 0 0" FontSize="18"/>
+                        <TextBox Name="SUsername" Width="180" Height="25" Margin="10 0 0 0" />
+                        <TextBlock Width="100" Text="Password:"  Margin="10 0 0 0" FontSize="18"/>
+                        <TextBox Name="SPassword" Width="180" Height="25" Margin="10 0 0 0" />
+                        <TextBlock Text="Your Role" Width="80" FontSize="18"/>
+                        <ComboBox Width="200" SelectedIndex="0" Name="CBCarMan" FontSize="16" HorizontalAlignment="Center" >
                             <ComboBoxItem>Select Role</ComboBoxItem>
                             <ComboBoxItem>Lecturer</ComboBoxItem>
                             <ComboBoxItem>PC and AM</ComboBoxItem>
                             <ComboBoxItem>HR</ComboBoxItem>
                         </ComboBox>
-                        <Button Content="Confirm" Margin="10 0 0 0" Width="50" Name="RoleSelect" Click="RConfirm_Click"/>
+                        <Button Content="Confirm" Margin="10 0 0 0" Width="70" Name="RoleSelect" Click="RConfirm_Click" FontSize="16"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
-                        <Button Width="100" Height="25" Content="SignUp" Click="SignUp_Click"/>
-                        <Button Width="100" Height="25" Content="LogIn" Click="LogIn_Click"/>
+                        <Button Width="100" Height="30" Content="SignUp" Click="SignUp_Click" FontSize="18"/>
+                        <Button Width="100" Height="30" Content="LogIn" Click="LogIn_Click" FontSize="18"/>
                     </StackPanel>
                 </StackPanel>
             </TabItem>
             <TabItem Header="Lecturer View" Name="LecCla">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Width="150" Text="Claim Submission"  Margin="10 0 0 0"/>
-                    <TextBlock Width="180" Text="--Lecturer--"  Margin="0 0 600 0"/>
+                    <TextBlock Width="180" Text="Claim Submission"  Margin="10 0 0 0" FontSize="20" FontWeight="Bold" TextDecorations="Underline"/>
+                    <TextBlock Width="180" Text="--Lecturer--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="90" Text="Lecturer Name:"  Margin="10 0 0 0"/>
                         <TextBox Name="LName" Width="180" Margin="10 0 0 0" />
                         <TextBlock Width="100" Text="Lecturer Surname:"  Margin="10 0 0 0"/>
                         <TextBox Name="LSurname" Width="180" Margin="10 0 0 0" />
                     </StackPanel>
-                    <TextBlock Width="180" Text="--Course--"  Margin="0 0 600 0"/>
+                    <TextBlock Width="180" Text="--Course--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="80" Text="Course Code:"  Margin="10 0 0 0"/>
                         <TextBox Name="Code" Width="110" Margin="10 0 0 0" />
@@ -52,19 +52,19 @@
                         <Label>End Date:</Label>
                         <DatePicker></DatePicker>
                     </StackPanel>
-                    <TextBlock Width="180" Text="--Hours--"  Margin="0 0 600 0"/>
+                    <TextBlock Width="180" Text="--Hours--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="120" Text="Total Hours Worked:"  Margin="10 0 0 0"/>
                         <TextBox Name="HoursWorked" Width="110" Margin="10 0 0 0" />
                         <TextBlock Width="80" Text="Hourly Rate:"  Margin="10 0 0 0"/>
                         <TextBox Name="HRate" Width="110" Margin="10 0 0 0" />
                     </StackPanel>
-                    <TextBlock Width="180" Text="--Documents--"  Margin="0 0 600 0"/>
+                    <TextBlock Width="180" Text="--Documents--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="180" Text="Choose a Document to Upload:"  Margin="10 0 0 0"/>
                         <Button x:Name="UploadButton" Content="Upload Document"/>
                     </StackPanel>
-                    <TextBlock Width="180" Text="--Notes--"  Margin="0 0 600 0"/>
+                    <TextBlock Width="180" Text="--Notes--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="120" Text="Additional Notes:"  Margin="10 0 0 0"/>
                         <TextBox Name="Notes" Width="500" Margin="10 0 0 0" />
@@ -74,7 +74,7 @@
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">
                 <StackPanel Orientation="Vertical">
-                    <TextBlock Width="120" Text="Verification of Claims"  Margin="10 0 0 0" HorizontalAlignment="Center"/>
+                    <TextBlock Width="200" Text="Verification of Claims"  Margin="10 0 0 0" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" TextDecorations="Underline"/>
                     <Button Width="100" Height="25" Content="View Claims" Click="VClaim_Click" HorizontalAlignment="Center"/>
                     <StackPanel Orientation="Horizontal">
                         <Label Name="LblLec" Content="Lecture: " Width="200"/>

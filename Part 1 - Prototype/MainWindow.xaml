@@ -23,11 +23,11 @@
                             <ComboBoxItem>PC and AM</ComboBoxItem>
                             <ComboBoxItem>HR</ComboBoxItem>
                         </ComboBox>
-                        <Button Content="Confirm" Margin="10 0 0 0" Width="70" Name="RoleSelect" Click="RConfirm_Click" FontSize="16"/>
+                        <Button Content="Confirm" Margin="10 0 0 0" Width="70" Name="RoleSelect" Click="RConfirm_Click" FontSize="16" Background="#FFE97F7F"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="0,20,0,0">
-                        <Button Width="100" Height="30" Content="SignUp" Click="SignUp_Click" FontSize="18"/>
-                        <Button Width="100" Height="30" Content="LogIn" Click="LogIn_Click" FontSize="18"/>
+                        <Button Width="100" Height="30" Content="SignUp" Click="SignUp_Click" FontSize="18" Background="#FF89E36E"/>
+                        <Button Width="100" Height="30" Content="LogIn" Click="LogIn_Click" FontSize="18" Background="#FF83F3E7"/>
                     </StackPanel>
                 </StackPanel>
             </TabItem>
@@ -62,20 +62,20 @@
                     <TextBlock Width="180" Text="--Documents--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="180" Text="Choose a Document to Upload:"  Margin="10 0 0 0"/>
-                        <Button x:Name="UploadButton" Content="Upload Document"/>
+                        <Button x:Name="UploadButton" Content="Upload Document" Background="#FFE99494"/>
                     </StackPanel>
                     <TextBlock Width="180" Text="--Notes--"  Margin="0 0 600 0" FontSize="16" FontWeight="Bold"/>
                     <StackPanel Orientation="Horizontal" Margin="15">
                         <TextBlock Width="120" Text="Additional Notes:"  Margin="10 0 0 0"/>
                         <TextBox Name="Notes" Width="500" Margin="10 0 0 0" />
                     </StackPanel>
-                    <Button Width="100" Height="25" Content="Submit Claim" Click="BtnSub_Click"/>
+                    <Button Width="100" Height="25" Content="Submit Claim" Click="BtnSub_Click" Background="#FF619CAC"/>
                 </StackPanel> 
             </TabItem>
             <TabItem Header="Programme Coorrdinator and Academic Manager View" Name="pms">
                 <StackPanel Orientation="Vertical">
                     <TextBlock Width="200" Text="Verification of Claims"  Margin="10 0 0 0" HorizontalAlignment="Center" FontSize="20" FontWeight="Bold" TextDecorations="Underline"/>
-                    <Button Width="100" Height="25" Content="View Claims" Click="VClaim_Click" HorizontalAlignment="Center"/>
+                    <Button Width="100" Height="25" Content="View Claims" Click="VClaim_Click" HorizontalAlignment="Center" Background="#FFCD93F0"/>
                     <StackPanel Orientation="Horizontal">
                         <Label Name="LblLec" Content="Lecture: " Width="200"/>
                     </StackPanel>
@@ -93,8 +93,8 @@
                         <TextBlock Name="TBLNotes"/>
                     </StackPanel>
                     <StackPanel Orientation="Horizontal">
-                        <Button Width="100" Height="25" Content="Approve" Click="SignUp_Click"/>
-                        <Button Width="100" Height="25" Content="Reject" Click="LogIn_Click"/>
+                        <Button Width="100" Height="25" Content="Approve" Click="SignUp_Click" Background="#FF7DEE39"/>
+                        <Button Width="100" Height="25" Content="Reject" Click="LogIn_Click" Background="#FFF05C33"/>
                     </StackPanel>
                 </StackPanel>
             </TabItem>
